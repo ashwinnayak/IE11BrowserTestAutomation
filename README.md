@@ -16,7 +16,7 @@ public class internetExplorerPrivateBrowsing {
         DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
         capabilities.setCapability(InternetExplorerDriver.FORCE_CREATE_PROCESS, true);
         capabilities.setCapability(InternetExplorerDriver.IE_SWITCHES, "-private");
-        System.setProperty("webdriver.ie.driver","C:\\Grid\\IEDriverServer.exe");
+        System.setProperty("webdriver.ie.driver","C:\\IEDriverServer.exe");
         WebDriver IEDriver = new InternetExplorerDriver(capabilities);
         IEDriver.get("https://www.bing.com/");
         return IEDriver;
