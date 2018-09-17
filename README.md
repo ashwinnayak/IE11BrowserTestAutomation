@@ -10,7 +10,7 @@ public class internetExplorerPrivateBrowsing {
 
     public static void main(String args[]){
         createIEInstance();
-    }
+    }   
 
     public static WebDriver createInstance(){
         DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
